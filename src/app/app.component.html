@@ -1,19 +1,37 @@
-<h1>Title</h1>
-<h2>Title</h2>
-<h3>Title</h3>
-<h4>Title</h4>
-<h5>Title</h5>
-<h6>Title</h6>
+<section
+  class="main-form"
+  [class.density-0]="density === '0'"
+  [class.density-1]="density === '-1'"
+  [class.density-2]="density === '-2'"
+  [class.density-3]="density === '-3'"
+>
+  <label>
+    Select density
+    <select [(ngModel)]="density">
+      <option value="0">0</option>
+      <option value="-1">-1</option>
+      <option value="-2">-2</option>
+      <option value="-3">-3</option>
+    </select>
+  </label>
 
-<p>Lorem ipsum dolor sit.</p>
-<small>Lorem ipsum dolor sitfdsgd.</small>
+  <h1>Title</h1>
+  <h2>Title</h2>
+  <h3>Title</h3>
+  <h4>Title</h4>
+  <h5>Title</h5>
+  <h6>Title</h6>
 
-<app-autocomplete></app-autocomplete>
-<app-checkbox></app-checkbox>
-<app-datepicker></app-datepicker>
-<app-form-field></app-form-field>
-<app-paginator></app-paginator>
-<app-radio-button></app-radio-button>
-<app-select></app-select>
-<app-slide-toggle></app-slide-toggle>
-<app-slider></app-slider>
+  <p>Lorem ipsum dolor sit.</p>
+  <small>Lorem ipsum dolor sitfdsgd.</small>
+
+  <app-autocomplete></app-autocomplete>
+  <app-checkbox></app-checkbox>
+  <app-datepicker></app-datepicker>
+  <app-form-field></app-form-field>
+  <app-paginator></app-paginator>
+  <app-radio-button></app-radio-button>
+  <app-select></app-select>
+  <app-slide-toggle></app-slide-toggle>
+  <app-slider></app-slider>
+</section>
